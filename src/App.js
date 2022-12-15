@@ -2,7 +2,7 @@ import 'react-date-range/dist/styles.css'; // main css file
 import 'react-date-range/dist/theme/default.css'; // theme css file
 
 import { CalendarIcon, SettingsIcon } from './components/icons';
-import { useCallback, useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 
 import ColumnBox from './components/column-box';
 import { DateRange } from 'react-date-range';
@@ -28,11 +28,11 @@ function App() {
     setIsSettings(!isSettings);
   }
   // To fetch the data in 
-  const fetchData =  ()=> {
+  const fetchData =  () => {
     const startDate = state[0].startDate && dateUtil(state[0].startDate);
     const endDate = state[0].endDate && dateUtil(state[0].endDate);
     if (endDate && startDate) {
-      fetch(`https://go-dev.greedygame.com/v3/dummy/report?startDate=${startDate}&endDate=${endDate}`)
+      fetch(`http://go-dev.greedygame.com/v3/dummy/report?startDate=${startDate}&endDate=${endDate}`)
       .then((res) => {
         return res.json();
       })
