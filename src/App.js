@@ -28,7 +28,7 @@ function App() {
     setIsSettings(!isSettings);
   }
   // To fetch the data in 
-  const fetchData = useCallback( ()=> {
+  const fetchData =  ()=> {
     const startDate = state[0].startDate && dateUtil(state[0].startDate);
     const endDate = state[0].endDate && dateUtil(state[0].endDate);
     if (endDate && startDate) {
@@ -41,7 +41,7 @@ function App() {
       });
      
     }
-  },[state])
+} 
   useEffect(() => {
     fetchData(); 
   },)
