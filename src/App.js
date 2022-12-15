@@ -32,7 +32,7 @@ function App() {
     const startDate = state[0].startDate && dateUtil(state[0].startDate);
     const endDate = state[0].endDate && dateUtil(state[0].endDate);
     if (endDate && startDate) {
-      fetch(`http://go-dev.greedygame.com/v3/dummy/report?startDate=${startDate}&endDate=${endDate}`)
+      fetch(`https://go-dev.greedygame.com/v3/dummy/report?startDate=${startDate}&endDate=${endDate}`)
       .then((res) => {
         return res.json();
       })

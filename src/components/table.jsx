@@ -6,7 +6,7 @@ const TableComponent = ({settings,arrayOfData}) => {
   
   React.useEffect(() => {
     
-    fetch(`http://go-dev.greedygame.com/v3/dummy/apps`)
+    fetch(`https://go-dev.greedygame.com/v3/dummy/apps`)
       .then((res) => {
         return res.json();
       })
