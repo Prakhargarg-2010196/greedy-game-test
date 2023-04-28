@@ -1,3 +1,6 @@
+This is the assignment I created when I went interviewing for greedy game startup.
+- This is incomplete project which has to be done in due time when I will get free 
+
 # Link to Hosted Site
 
 https://prakhar-greedy-game-assignment.netlify.app/
